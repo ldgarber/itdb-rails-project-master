@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.3.1"
+
 gem 'rails', '4.2'
 gem 'sass-rails', '4.0.2'
 gem 'uglifier', '>= 1.3.0'
@@ -8,7 +10,7 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'devise' 
+gem 'turbolinks', '~> 5.0.0' 
 
 group :test, :development do
   gem "rspec-rails"
