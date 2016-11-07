@@ -1,3 +1,4 @@
-<h2><%= piece.title %></h1>
-<%= piece.description %> 
-
+<h3><%= link_to piece.title, piece_path(piece) %></h3>
+<p><%= piece.description %> </p>
+<p><%= piece.sheet_music_link %></p>
+<p><%= link_to piece.composer.name, composer_path(piece.composer) %>, <%= piece.year %> </p>

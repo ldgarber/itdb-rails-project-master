@@ -5,7 +5,8 @@ beethoven = Composer.create(name: "Beethoven")
     title: Faker::Commerce.product_name, 
     year: Faker::Number.between(1600,2016), 
     difficulty: Faker::Number.between(1,5), 
-    composer: beethoven 
+    composer: beethoven, 
+    sheet_music_link: Faker::Internet.url('imslp.org')
   )
 end
 
