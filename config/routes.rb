@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :composers
+
   resources :pieces
 
   devise_for :users
