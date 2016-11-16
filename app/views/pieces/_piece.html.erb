@@ -1,4 +1,9 @@
 <h3><%= link_to piece.title, piece_path(piece) %></h3>
 <p><%= piece.description %> </p>
-<p><%= piece.sheet_music_link %></p>
+<p><%= link_to "View sheet music", piece.sheet_music_link, :target => '_blank' %></p>
 <p><%= link_to piece.composer.name, composer_path(piece.composer) %>, <%= piece.year %> </p>
+
+<% if user_signed_in? %>
+  <%= button_to "Save" %> 
+<% end %> 
+
